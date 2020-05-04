@@ -1,4 +1,4 @@
-CREATE OR REPLACE VIEW Country_Ranks AS
+CREATE OR REPLACE VIEW Country_Rank AS
 SELECT
    Participant.participant_id,
    country_name,
