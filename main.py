@@ -55,12 +55,12 @@ first = py.plot(fig, filename='bar_1')
 # SECOND
 query = '''
 SELECT
-    award_name,
+    award_type,
     ROUND(COUNT(participant_id)*100/(SELECT COUNT(participant_id) FROM Award), 1) fraction
 FROM 
     Award
-GROUP BY award_name
-ORDER BY award_name
+GROUP BY award_type
+ORDER BY award_type
 '''
 
 cursor.execute(query)
