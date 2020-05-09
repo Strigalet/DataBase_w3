@@ -4,7 +4,7 @@ import csv
 connection = cx_Oracle.connect('alyosha', '123456789', 'localhost/xe')
 cursor = connection.cursor()
 
-columns = ['year', 'country', 'firstname', 'lastname', 'problem1', 'problem1', 'problem2', 'problem3', 'problem4', 'problem5', 'problem6', 'total', 'rank', 'award']
+columns = ['AWARD', 'AWARDTYPE', 'COUNTRY', 'OLYMPIAD','PARTICIPANT', 'PROBLEM_1', 'PROBLEM_2', 'PROBLEM_3', 'PROBLEM_4', 'PROBLEM_5','PROBLEM_6']
 
 for column in columns:
     with open(f'{column}.csv', 'w', newline='') as file:
