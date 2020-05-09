@@ -5,7 +5,3 @@ SELECT
    year,
    rank
 FROM Participant JOIN Award ON Participant.participant_id = Award.participant_id
-
-
-
-
