@@ -8,7 +8,7 @@ cursor = connection.cursor()
 country_names = []
 participant_id = 1
 
-years=['1984','1989','1994','1999','2004','2009','2014']
+years=['1984','1994','2004','2014']
 
 with io.open('imo_results.csv', 'r') as file:
     reader = csv.DictReader(file, delimiter=',')
